@@ -1,4 +1,4 @@
-Checklist for coding the DELETE record correctly (for Database Drive App)
+Checklist for coding the DELETE record correctly (for Database Driven App)
 =========================================================================
 
 Checklist to confirm 'DELETE' record (for database driven app) is coded correctly
