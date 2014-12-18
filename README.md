@@ -1,5 +1,5 @@
-delete-record-checklist
-=======================
+Checklist for coding the DELETE record correctly (for Database Drive App)
+=========================================================================
 
 Checklist to confirm 'DELETE' record (for database driven app) is coded correctly
 
@@ -16,8 +16,8 @@ Generally, the user who create a record can also delete the same record. Admin u
 <br ><br >
 Before the snippet that deletes the images / files, you must add a check to </b>confirm current user's right to delete those assets</b>.  
 
-* Once you delete the record,  you may want to set logic to <b>delete / manage its associated records</b>.  
-<br ><b>Case 1:</b> If you delete a user from user's table then you may use MySQL's cascading feature to delete its associated records wherever user_id has been used as foreign key.
+* Once you delete the record,  you may want to set logic to <b>delete / manage its associated records</b>.
+<br /><b>Case 1:</b> If you delete a user from user's table then you may use MySQL's cascading feature to delete its associated records wherever user_id has been used as foreign key.
 <br><b>Case 2:</b> Altenatively, you may consider to assign a new user to the assoicated records of user that is crrently being deleted. If there is a post table that stores all the posts from users then you may code functionality such that when admin delete the user then that user's posts must be assigned to another user before her record is deleted.
 <br ><b>Case 3:</b> In some cases, you may want to prevent delete operation. For example, consider that you are working with 'Orders' module. You may want to prevent the delete operations on State, Country or Address that are associalted with the Pending Orders. 
 
